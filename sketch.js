@@ -14,7 +14,7 @@ function preload(){
   coinImage=loadImage("download.png");
 }
 function setup() {
-canvas= createCanvas(displayWidth-30,displayHeight-70);
+ createCanvas(displayWidth-30,displayHeight-70);
   ground= createSprite(displayWidth/2,displayHeight/2,displayWidth*3,displayHeight*4);
   ground.addImage("ground",groundImage);
   ground.scale=3;
@@ -31,7 +31,7 @@ canvas= createCanvas(displayWidth-30,displayHeight-70);
    cometGroup=createGroup();
    blocksGroup=createGroup();
    coinGroup=createGroup();
-   player.debug=true;
+  // player.debug=true;
    player.setCollider("rectangle",0,0,100,150);
 
     text1 =createElement('h2');
